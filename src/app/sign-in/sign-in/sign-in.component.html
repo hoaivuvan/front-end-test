@@ -1,0 +1,16 @@
+<div style="background-color: #f1f4f9; height: 100%;">
+    <form>
+        <img src="../../../assets/watch_a_location_logo.svg" class="logo">
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+                placeholder="Enter email" [(ngModel)]="signInData.email" />
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"
+                [(ngModel)]="signInData.password" />
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="signIn()">Submit</button>
+    </form>
+</div>
+
+<ngx-spinner></ngx-spinner>

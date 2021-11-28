@@ -1,0 +1,12 @@
+<div id="map" class="match-parent" [ngStyle]="{'height':  displayChart ? '50%' : '100%' }"></div>
+
+<div class="popup" *ngIf="displayChart" (click)="displayChart = false">
+    <div class="row">
+        <div class="col-md-6 col-xs-6">
+            <canvas baseChart class="chart" [data]="genderChartData" [labels]="genderChartLabels" chartType="doughnut" [options]="genderChartOptions" height="200px"></canvas>
+        </div>
+        <div class="col-md-6 col-xs-6">
+            <canvas baseChart class="chart" [data]="agesChartData" [labels]="agesChartLabels" chartType="doughnut" [options]="agesChartOptions" height="200px"></canvas>
+        </div>
+    </div>
+</div>
